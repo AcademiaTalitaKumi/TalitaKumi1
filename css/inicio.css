@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes animacion_1 {
+    0% {
+        transform: scale(1, 2);
+        opacity: 0;
+    }
+}
+
+body {
+    background: #e3c3ff;
+
+}
+
+/************************Header************************/
+#header ul {
+    display: flex;
+    /* Enable Flexbox layout */
+    align-items: center;
+    /* Vertically center items */
+    list-style: none;
+    /* Remove bullet points (if needed) */
+    margin: 0;
+    /* Reset default margins */
+    padding: 0;
+    /* Reset default padding */
+}
+
+#header ul li {
+    /*List Items*/
+    margin-left: 20px;
+    padding: 8px;
+    background-color: #928bfb;
+    border-radius: 12px;
+    width: 9.5%;
+}
+
+#header a {
+    /*Textos*/
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#header {
+    width: 100vw;
+    height: auto;
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #f4e3ff;
+    margin-bottom: 20px;
+
+}
+
+#header li:hover {
+    background: rgb(59, 23, 219);
+    animation: 0.2s animacion_1 1;
+    cursor: pointer;
+}
+
+#logo:hover {
+    animation: 0.2s animacion_1 1;
+    cursor: pointer;
+}
+
+#logo {
+    width: 100px;
+    max-width: 100%;
+    height: 100px;
+    /* Or your desired height */
+    margin-top: 10px;
+}
+
+
+/************************Títulos************************/
+#titulo,
+h2 {
+    display: block;
+    margin-top: 130px;
+    color: #363262;
+    font-family: 'Poppins', sans-serif;
+    font-style: oblique;
+    font-size: 26px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-style: normal;
+
+}
+
+/********************Contenido gral*********************/
+#contenido {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    display: block;
+}
+
+#contenido p {
+    color: #484486;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    text-align: justify;
+}
+
+
+/*********************Quiénes somos********************/
+#quienessomos>img {
+
+    float: right;
+    width: 40vw;
+    margin-top: 32px;
+    margin-left: 50px;
+    max-height: 500px;
+    max-width: 890px;
+}
+
+/*********************Qué enseñamos********************/
+#queenseñamos>ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    color: #484486;
+
+}
+
+#queenseñamos>ul>li {
+    flex-basis: calc(33.33% - 20px);
+    /* Esto distribuirá los elementos en 3 columnas */
+    margin-right: 20px;
+    /* Espacio entre las listas */
+    margin-bottom: 50px;
+    list-style: none;
+}
+
+#queenseñamos ul {
+    margin: 0;
+    padding: 0;
+}
+
+#queenseñamos ul ul {
+    margin-left: 20px;
+    /* Espacio entre las sublistas */
+}
+
+#queenseñamos ul ul li {
+    margin-bottom: 5px;
+    /* Espacio entre los elementos de la sublista */
+    list-style: none;
+}
+
+/*********************Ubicacion********************/
+
+
+#ubicacion>p {
+    text-align: center;
+}
+
+#ubicacion iframe {
+    width: 80vw;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
+/*********************Contacto********************/
+#contacto {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+#contacto a img {
+    width: 30vw;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media (max-width: 750px) {
+
+    #header {
+        width: 100vw;
+        height: auto;
+        display: block;
+        position: absolute;
+    }
+
+    #header ul {
+        width: 100vw;
+        display: block;
+    }
+
+    #header ul li {
+        width: 94%;
+        display: block;
+        margin-bottom: 8px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #header a {
+        text-align: center;
+    }
+
+    #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #titulo {
+        margin-top: 450px;
+    }
+
+    #contenido {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    #contenido p {
+        font-size: 18px;
+        text-align: justify;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #queenseñamos ul {
+        font-size: 18px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #queenseñamos>ul>li {
+        flex-basis: calc(50% - 20px);
+        /* Esto distribuirá los elementos en 3 columnas */
+        margin-right: 20px;
+        /* Espacio entre las listas */
+        margin-bottom: 50px;
+        list-style: none;
+    }
+
+    #quienessomos img {
+
+        display: block;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ubicacion iframe {
+        width: 80vw;
+        height: 450px;
+    }
+
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-style: normal;
+
+    }
+
+}

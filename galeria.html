@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/galeria.css">
+    <title>galeria</title>
+</head>
+
+<body>
+    <header id="header">
+        <ul>
+            <img src="imagenes/image.png" alt="Estética Talita Kumi" id="logo">
+            <li><a href="inicio.html#titulo">Quiénes somos</a></li>
+            <li><a href="inicio.html#queenseñamos">Curricula</a></li>
+            <li><a href="inscripciones.html">Inscripciones</a></li>
+            <li><a href="galeria.html">Galería </a></li>
+            <li><a href="inicio.html#ubicacion">Ubicación</a></li>
+            <li><a href="inicio.html#contacto">Contacto</a></li>
+        </ul>
+    </header>
+
+    <div class="imagen-completa" id="imagencompletaBox">
+        <img src="img/261441883_418410266606700_6713361808824309648_n.jpg" id="imagencompleta">
+        <span onclick="cerrarimagen()">X</span>
+    </div>
+    <p id="p1">Galería de fotos</p>
+    <div class="galeria">
+        <img src="imagenes/galeria/1.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/2.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/3.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/4.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/5.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/6.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/7.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/8.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/9.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/10.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/11.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/12.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/13.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/14.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/15.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/16.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/17.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/18.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/19.jpg" onclick="abririmagencompleta(this.src)">
+        <img src="imagenes/galeria/20.jpg" onclick="abririmagencompleta(this.src)">
+    </div>
+    <script>
+        var imagencompletaBox = document.getElementById("imagencompletaBox");
+        var imagencompleta = document.getElementById("imagencompleta");
+
+        function abririmagencompleta(foto) {
+            imagencompletaBox.style.display = "flex";
+            imagencompleta.src = foto;
+        }
+
+        function cerrarimagen() {
+            imagencompletaBox.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
